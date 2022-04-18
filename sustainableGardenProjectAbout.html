@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sustainable Garden Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets.css">
+</head>
+
+<body class="w3-theme-d1 w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:300px;" id="navSidebar"><br>
+    <div class="w3-container">
+      <button onclick="w3_close()" class="w3-buttonCustom w3-padding w3-hide-large w3-right" title="close menu">
+        <i class="fa fa-remove"></i>
+      </button>
+      <h4 class="w3-animate-left"><b>SUSTAINABLE GARDEN PROJECT</b></h4>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left "><i
+          class="fa fa-solid fa-arrow-left"></i> MAIN PAGE</a>
+      <a href="#description" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">DESCRIPTION</a>
+      <a href="#frontend" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">FRONTEND</a>
+      <a href="#backend" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">BACKEND</a>
+      <a href="#video" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">VIDEO OVERVIEW</a>
+      <a href="#images" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">IMAGE GALLERY</a>
+      <a href="#gitHubProj" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">GITHUB PROJECTS</a>
+    </div>
+    <div class="w3-panel w3-large">
+      <a href="https://www.linkedin.com/in/joseph-carey-612357172/" target="_blank" title="LinkedIn Profile"
+        class="removeTextDecor">
+        <i class="fa fa-2x fa-fw fa-brands fa-linkedin w3-animate-left w3-customButton"></i>
+      </a>
+      <a href="https://github.com/JosephCarey-cpp/" target="_blank" title="GitHub Profile" class="removeTextDecor">
+        <i class="fa fa-2x fa-fw fa-brands fa-github w3-animate-left w3-customButton"></i>
+      </a>
+
+      <a href="https://tryhackme.com/p/JoeCodes21" target="_blank" title="TryHackMe Profile" class="removeTextDecor">
+        <i class="fa fa-fw fa-2x">
+          <img src="assets/tryhackme_logo_custom.svg" alt="Norway" style="width:90%"
+            class=" w3-animate-left w3-customButton">
+        </i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+    <!-- Header -->
+    <header id="projects">
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-theme" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-sitemap w3-customColor2"
+            style="padding-right: 10px;"></i><b>Sustainable Garden Project</b></h2>
+        <h3><b>🟢 Active</b></h3>
+        <img src="assets/SGP_ImgCombo.jpg" alt="STEM Center Banner" class="headerImg">
+      </div>
+    </header>
+
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="description">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-bars w3-customColor2"
+          style="padding-right: 10px;"></i><b>Description:</b></h2>
+      <p><b>DURATION: Sept 2021 - Current</b></p>
+      <p><b>Check out the Sustainable Garden Project on the <a
+            href="https://gavgearclub.github.io/GearClub/gallery.html" target="_blank">GEAR Club website</a></b></p>
+      <p><b>
+          During this time, the project has helped in gaining the following skills in full stack development:
+        </b></p>
+      <ul>
+        <li>Managing a server for user and sensor data</li>
+        <ul>
+          <li>Utilizing the technology Docker and working with Docker Images</li>
+          <li>Using the Django REST Framework to store data and gain information about the garden</li>
+          <li>Understanding networking and remote access to the server to work on debugging</li>
+        </ul>
+        <li>Maintaining an Angular Web App through Nativescript</li>
+        <ul>
+          <li>Using web development languages such as HTML, SCSS, and TypeScript</li>
+          <li>Design UI for the app</li>
+        </ul>
+        <li>Working with a team and practicing the project cycle</li>
+      </ul>
+      <p><b>To learn more about my experience, check out my resume below.</b></p>
+      <p>
+        <button class=" w3-buttonCustom w3-margin-top w3-margin-bottom">
+          <a href="assets/resume.pdf" target="_blank">
+            <i class="fa fa-2x fa-file-pdf w3-margin-right"></i>View Resume
+          </a>
+        </button>
+      </p>
+    </div>
+
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="frontend">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-mobile w3-customColor2"
+          style="padding-right: 10px;"></i><b>Frontend</b></h2>
+      <p><b>About:</b></p>
+      <p>The Frontend of the Sustainable Garden Project App is to give the user a friendly interface to view data from
+        the sustainable garden. The data shown to the user can be used for other departments in Gavilan College, such as
+        the Biology Department.</p>
+      <p>Using Nativescript and Angular, the app works on android devices, and is constantly being updated with new
+        features as the project progresses.</p>
+      <p><b>Check out the frontend on GitHub in the <a href="#gitHubProj">GitHub Project</a> Tab!</b></p>
+    </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="backend">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-database w3-customColor2"
+          style="padding-right: 10px;"></i><b>Backend</b></h2>
+      <p><b>About:</b></p>
+      <p>The Backend of the Sustainable Garden Project App is a combination of using Docker containers to store a Django
+        database, which can be utilized on any platform. Docker is an essential aspect of this project, as the server
+        will run on a Raspberry Pi 4B, which can have its OS change. Since the server is within Docker containers, it
+        does not matter where deployed the server on any system.</p>
+      <p>The database can showcase information about the sensors coming from the garden through an Arduino MEGA board
+        and send the data to the app with serialization. The server also has user account storage for users to get
+        specific or custom data changes.</p>
+      <p><b>Check out the frontend on GitHub in the <a href="#gitHubProj">GitHub Project</a> Tab!</b></p>
+    </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="video">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-brands fa-youtube w3-customColor2"
+          style="padding-right: 10px;"></i><b>Video Overview</b>
+      </h2>
+      <p>This video will give a brief overview of the project and how it works.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/peiJDZFZNzg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="images">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class=" fa fa-solid fa-images w3-customColor2"
+          style="padding-right: 10px;"></i><b>Image Gallery</b></h2>
+
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="assets/SGPFrontend_Img1.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="assets/SGPFrontend_Img2.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="assets/SGPFrontend_Img3.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="assets/SGPFrontend_Img4.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="assets/SGPFrontend_Img5.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="assets/SGPFrontend_Img6.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+        <div class="w3-half w3-container w3-margin-bottom">
+          <img src="assets/SGPBackend_Img1.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+        <div class="w3-half w3-container w3-margin-bottom">
+          <img src="assets/SGPBackend_Img2.jpg" alt="Sustainable Garden App" style="width:100%">
+          <img src="assets/SGPBackend_Img3.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+      </div>
+
+      <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="gitHubProj">
+        <div class="w3-section w3-bottombar w3-padding-16"></div>
+        <h2 class="w3-customColor1 w3-padding-16"><i class=" fa fa-solid fa-folder-open w3-customColor2"
+            style="padding-right: 10px;"></i><b>GitHub Projects:</b></h2>
+        <p>Check my contributer status on these projects.</p>
+
+        <ul>
+          <li><a href="https://github.com/Jose-Velasco/Sustainable-garden-project" target="_blank">Frontend</a></li>
+          <li><a href="https://github.com/paxman101/sustainableGardenBackend" target="_blank">Backend</a></li>
+        </ul>
+
+      </div>
+
+      <!-- End page content -->
+    </div>
+    <footer class="w3-container w3-padding-32 w3-black" id="about">
+      <p class="w3-black w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+          target="_blank" class="w3-hover-opacity">w3.css</a> and GitHub Pages</p>
+    </footer>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("navSidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close(idOfDiv) {
+        document.getElementById("navSidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+        document.getElementById(idOfDiv).scrollIntoView();
+      }
+    </script>
+
+</body>
+
+</html>

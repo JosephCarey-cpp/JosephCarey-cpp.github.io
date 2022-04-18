@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio of Joseph Carey</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets.css">
+</head>
+
+<body class="w3-theme-d1 w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:300px;" id="navSidebar"><br>
+    <div class="w3-container">
+      <button onclick="w3_close()" class="w3-buttonCustom w3-padding w3-hide-large w3-right" title="close menu">
+        <i class="fa fa-remove"></i>
+      </button>
+
+
+      <h4 class="w3-animate-left"><b>PORTFOLIO</b></h4>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#projects" onclick="w3_close(projects)"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">PROJECTS</a>
+      <a href="#about" onclick="w3_close(about)"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left">ABOUT</a>
+    </div>
+    <div class="w3-panel w3-large">
+      <a href="https://www.linkedin.com/in/joseph-carey-612357172/" target="_blank" title="LinkedIn Profile"
+        class="removeTextDecor">
+        <i class="fa fa-2x fa-fw fa-brands fa-linkedin w3-animate-left w3-customButton"></i>
+      </a>
+      <a href="https://github.com/JosephCarey-cpp/" target="_blank" title="GitHub Profile" class="removeTextDecor">
+        <i class="fa fa-2x fa-fw fa-brands fa-github w3-animate-left w3-customButton"></i>
+      </a>
+
+      <a href="https://tryhackme.com/p/JoeCodes21" target="_blank" title="TryHackMe Profile" class="removeTextDecor">
+        <i class="fa fa-fw fa-2x">
+          <img src="assets/tryhackme_logo_custom.svg" alt="Norway" style="width:90%"
+            class=" w3-animate-left w3-customButton">
+        </i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+    <!-- Header -->
+    <header id="projects">
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-theme" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-laptop-code w3-customColor2"
+            style="padding-right: 10px;"></i><b>Projects</b></h2>
+        <p><b>🟢 Active</b></p>
+      </div>
+    </header>
+
+
+    <!-- first Photo row-->
+    <div class="w3-row-padding">
+      <div class="w3-half w3-container w3-margin-bottom">
+        <img src="assets/STEMBanner.jpg" alt="STEM Center Banner" style="width:100%">
+        <div class="w3-container w3-theme-l5">
+          <h3 class="flex-container"><b>🟢 STEM Center Website</b></h3>
+          <div class="flex-container">
+            <p><b>Technologies: Cascade CMS<br>Gained: Web Development, UI Design, Accessibility Integration, Project
+                Cycle</b></p>
+          </div>
+          <p class="flex-container">This project aims to help maintain the Gavilan College STEM Center website.</p>
+          <div class="flex-containerButton">
+
+            <button class=" w3-buttonCustom w3-padding-large w3-margin-top w3-margin-bottom flex-containerButton">
+              <a href="stemCenterWebsite.html">
+                <i class="fa fa-arrow-right w3-margin-right"></i>STEM Center Website Details
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-half w3-container w3-margin-bottom">
+        <img src="assets/Internship_JosephCarey.png" alt="Internship With Gavilan and SJSU" style="width:100%">
+        <div class="w3-container w3-theme-l5">
+          <h3 class="flex-container"><b>Gavilan College & San Jose State University Internships: Graphs and 3D
+              Printing</b></h3>
+          <div class="flex-container">
+            <p><b>Gained: Algorithm Creation, More Knowledge of Graphs, Project Cycle</b></p>
+          </div>
+          <p class="flex-container">This internship aimed to research the state of 3D printing and create an algorithm
+            to solve breaks in prints.</p>
+          <div class="flex-containerButton">
+            <button class=" w3-buttonCustom w3-padding-large w3-margin-top w3-margin-bottom">
+              <a href="gavSJSUInternshipAbout.html">
+                <i class="fa fa-arrow-right w3-margin-right"></i>Internship Details
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second row -->
+    <div class="w3-row-padding">
+      <div class="w3-half w3-container w3-margin-bottom">
+        <img src="assets/SGPFrontend_ImgCombo.jpg" alt="Sustainable Garden App" style="width:100%">
+        <div class="w3-container w3-theme-l5">
+          <h3 class="flex-container"><b>🟢 Sustainable Garden Project (SGP) Frontend: Android App</b></h3>
+          <div class="flex-container">
+            <p><b>Technologies: Angular, NativeScript, Node.js, Android Studio<br>Gained: Full Stack Development (see
+                SGP Backend), UI Design, Project Cycle</b></p>
+          </div>
+          <p class="flex-container">The goal of this project is to help maintain the Gavilan Engineering And Research
+            (GEAR) Club app for the SGP. The front end uses a web application on a mobile device to bring data from the
+            garden through the backend.</p>
+          <div class="flex-containerButton">
+
+            <button class=" w3-buttonCustom w3-padding-large w3-margin-top w3-margin-bottom flex-containerButton">
+              <a href="sustainableGardenProjectAbout.html">
+                <i class="fa fa-arrow-right w3-margin-right"></i>SGP Frontend Details
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-half w3-container w3-margin-bottom">
+        <img src="assets/SGPBackend_Img1.jpg" alt="Docker Containers And Django" style="width:100%">
+        <div class="w3-container w3-theme-l5" style="width:100%">
+          <h3 class="flex-container"><b>🟢 Sustainable Garden Project (SGP) Backend: Docker Containers And Django
+              Database</b></h3>
+          <div class="flex-container">
+            <p><b>Technologies: Docker, Django REST Framework<br>Gained: Full Stack Development (see
+                SGP Frontend), Project Cycle, Server Maintence, CRUD with Django, Networking</b></p>
+          </div>
+          <p class="flex-container">This project aims to help maintain the Gavilan Engineering And Research (GEAR) Club
+            backend server for the SGP. The server uses Docker on a Raspberry Pi 4B with an Arduino MEGA with sensors
+            for the garden.</p>
+          <div class="flex-containerButton">
+
+            <button class=" w3-buttonCustom w3-padding-large w3-margin-top w3-margin-bottom flex-containerButton">
+              <a href="sustainableGardenProjectAbout.html">
+                <i class="fa fa-arrow-right w3-margin-right"></i>SGP Backend Details
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--third row-->
+    <div class="w3-row-padding">
+      <div class="w3-half w3-container w3-margin-bottom">
+        <img src="assets/tryhackme_logo_full.svg" alt="Norway" style="width:100%" class=" w3-black">
+        <div class="w3-container w3-theme-l5">
+          <h3 class="flex-container"><b>🟢 TryHackMe: Cybersecurity Learning Platform</b></h3>
+          <div class="flex-container">
+            <p><b>Gained: Various knowledge of cybersecurity, networking, and understanding Linux and Windows OS and
+              maintenance.</b></p>
+          </div>
+          <p class="flex-container">In this learning project, I am on the road to learning cybersecurity. My passion in
+            this project is to know about cyber defense (blue team) and be able to secure applications with this
+            knowledge of cybersecurity.</p>
+          <p class="flex-container">The button below will take you to my TryHackMe Profile to see my activity and
+            what skills I have gained from the completed TryHackMe rooms.</p>
+          <div class="flex-containerButton">
+            <button class=" w3-buttonCustom w3-padding-large w3-margin-top w3-margin-bottom flex-containerButton">
+              <div class="flex-containerRow">
+                <a href="https://tryhackme.com/p/JoeCodes21" target="_blank" title="TryHackMe Profile"
+                  class="removeTextDecor">
+                  <i class="fa fa-fw fa-2x">
+                    <img src="assets/tryhackme_logo_custom.svg" alt="Norway" style="width:100%"
+                      class=" w3-animate-left">
+                  </i> Check out my TryHackMe Profile
+                </a>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-half w3-container w3-margin-bottom">
+        <img src="assets/CSDataStructuresEx2.png" alt="Norway" style="width:100%">
+        <div class="w3-container w3-theme-l5">
+          <h3 class="flex-container"><b>CS Data Strutures Crash Course</b></h3>
+          <div class="flex-container">
+            <p><b>Gained: .NET Development, C#, Project Structure and Cycle.</b></p>
+          </div>
+          <p class="flex-container"> The goal was to create a learning app about data structures. This project was my
+            first ever project outside of the classroom in 2019-2020. What is shown as work produced in an intersession
+            semester (Dec 2019 - Feb 2020).</p>
+          <p class="flex-container">The button below will take you to my GitHub Project of this application to see the
+            assets and images of the project itself.</p>
+          <div class="flex-containerButton">
+            <button class=" w3-buttonCustom w3-padding-large w3-margin-top w3-margin-bottom flex-containerButton">
+              <div class="flex-containerRow">
+                <a href="https://github.com/JosephCarey-cpp/CS_data_structuresCrashCourse" target="_blank"
+                  title="GitHub Profile" class="removeTextDecor">
+                  <i class="fa fa-2x fa-fw fa-brands fa-github w3-animate-left"></i> CS Data Structures Crash Course
+                  Details
+                </a>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-user w3-customColor2"
+          style="padding-right: 10px;"></i><b>About:</b></h2>
+      <p>Hello! I'm Joseph Carey. For three years (since 2018), I have attended Gavilan Community College to obtain my
+        Associates Transfer Degree (AS-T). Afterward, I will continue my studies at California State University Monterey
+        Bay (CSUMB) for a Bachelor's degree in Computer Science (focus is network security).
+      </p>
+      <p>During my time at Gavilan, I have become the web developer for the STEM Center (while I am also a tutor),
+        Project Manager and Vice-President of the Computer Science Club, and full-stack developer for the Gavilan
+        Engineering And Research (GEAR) Club.
+      </p>
+      <p><b>To learn more about my experience, check out my resume below.</b></p>
+      <p>
+        <button class=" w3-buttonCustom w3-padding-large w3-margin-top w3-margin-bottom">
+          <a href="assets/resume.pdf" target="_blank">
+            <i class="fa fa-2x fa-file-pdf w3-margin-right"></i>View Resume
+          </a>
+        </button>
+      </p>
+      <hr>
+
+      <!-- End page content -->
+    </div>
+    <footer class="w3-container w3-padding-32 w3-black" id="about">
+      <p class="w3-black w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+          target="_blank" class="w3-hover-opacity">w3.css</a> and GitHub Pages</p>
+    </footer>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("navSidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close(idOfDiv) {
+        document.getElementById("navSidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+        document.getElementById(idOfDiv).scrollIntoView();
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>STEM Center Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets.css">
+</head>
+
+<body class="w3-theme-d1 w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:300px;" id="navSidebar"><br>
+    <div class="w3-container">
+      <button onclick="w3_close()" class="w3-buttonCustom w3-padding w3-hide-large w3-right" title="close menu">
+        <i class="fa fa-remove"></i>
+      </button>
+      <h4 class="w3-animate-left"><b>STEM CENTER WEBSITE</b></h4>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left "><i
+          class="fa fa-solid fa-arrow-left"></i> MAIN PAGE</a>
+      <a href="#description" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">DESCRIPTION</a>
+      <a href="#images" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">IMAGE GALLERY</a>
+      <a href="#resources" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">RESOURCES</a>
+    </div>
+    <div class="w3-panel w3-large">
+      <a href="https://www.linkedin.com/in/joseph-carey-612357172/" target="_blank" title="LinkedIn Profile"
+        class="removeTextDecor">
+        <i class="fa fa-2x fa-fw fa-brands fa-linkedin w3-animate-left w3-customButton"></i>
+      </a>
+      <a href="https://github.com/JosephCarey-cpp/" target="_blank" title="GitHub Profile" class="removeTextDecor">
+        <i class="fa fa-2x fa-fw fa-brands fa-github w3-animate-left w3-customButton"></i>
+      </a>
+
+      <a href="https://tryhackme.com/p/JoeCodes21" target="_blank" title="TryHackMe Profile" class="removeTextDecor">
+        <i class="fa fa-fw fa-2x">
+          <img src="assets/tryhackme_logo_custom.svg" alt="Norway" style="width:90%"
+            class=" w3-animate-left w3-customButton">
+        </i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+    <!-- Header -->
+    <header id="projects">
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-theme" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-regular fa-file-code w3-customColor2"
+            style="padding-right: 10px;"></i><b>Gavilan College STEM Center Website</b></h2>
+        <h3><b>🟢 Active</b></h3>
+        <img src="assets/STEMBanner.jpg" alt="STEM Center Banner" class="headerImg">
+      </div>
+    </header>
+
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="description">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-bars w3-customColor2"
+          style="padding-right: 10px;"></i><b>Description:</b></h2>
+      <p><b>DURATION: Feb. 2022 - Current</b></p>
+      <p><b>For this project, the task is to help the STEM Center redesign the website to be more dynamic for the
+          college and regularly maintain new information. During this time, the project has helped in gain the following
+          skills in web development:
+        </b></p>
+      <ul>
+        <li>Usage of Cascade CMS (and overriding classes from pre-created templates)</li>
+        <li>Team building in the project cycle</li>
+        <li>UI design, check out some of the stuff that was created under <a href="#images">Image Gallery</a></li>
+        <li>Accessibility Integration using Gavilan provided resources to implement process</li>
+      </ul>
+      <p><b>To learn more about my experience, check out my resume below.</b></p>
+      <p>
+        <button class=" w3-buttonCustom w3-margin-top w3-margin-bottom">
+          <a href="assets/resume.pdf" target="_blank">
+            <i class="fa fa-2x fa-file-pdf w3-margin-right"></i>View Resume
+          </a>
+        </button>
+      </p>
+    </div>
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="images">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class=" fa fa-solid fa-images w3-customColor2"
+          style="padding-right: 10px;"></i><b>Image Gallery</b></h2>
+
+      <div class="w3-row-padding">
+        <div class="w3-half w3-container w3-margin-bottom">
+          <img src="assets/STEM1.jpg" alt="Sustainable Garden App" style="width:100%">
+        </div>
+        <div class="w3-half w3-container w3-margin-bottom">
+          <img src="assets/STEM3.jpg" alt="Docker Containers And Django" style="width:100%">
+        </div>
+        <div class="w3-half w3-container w3-margin-bottom">
+          <img src="assets/STEM5.jpg" alt="Docker Containers And Django" style="width:100%">
+        </div>
+        <div class="w3-half w3-container w3-margin-bottom">
+          <img src="assets/STEM7.jpg" alt="Docker Containers And Django" style="width:100%;">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="resources">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class=" fa fa-solid fa-folder-open w3-customColor2"
+          style="padding-right: 10px;"></i><b>Resources</b></h2>
+      <ul>
+        <li>Accessibility Resource: <a href="assets/WebAccessbilityTraining_GC.pdf" target="_blank">Web Accessibility
+            Training</a></li>
+        <li>Visit the following links for my work thus far:</li>
+        <ul>
+          <li><a href="https://www.gavilan.edu/student/stem/stem_clubs.php" target="_blank">STEM Clubs</a></li>
+          <li><a href="https://www.gavilan.edu/student/stem/stemEventsPage.php" target="_blank">STEM Events</a></li>
+          <li><a href="https://www.gavilan.edu/student/stem/internships.php" target="_blank">STEM
+              Internships/Scholarships</a></li>
+          <li><a href="https://www.gavilan.edu/student/stem/index.php" target="_blank">STEM Homepage</a></li>
+        </ul>
+      </ul>
+    </div>
+
+    <footer class="w3-container w3-padding-32 w3-black" id="about">
+      <p class="w3-black w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+          target="_blank" class="w3-hover-opacity">w3.css</a> and GitHub Pages</p>
+    </footer>
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("navSidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close(idOfDiv) {
+      document.getElementById("navSidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+      document.getElementById(idOfDiv).scrollIntoView();
+    }
+  </script>
+
+</body>
+
+</html>

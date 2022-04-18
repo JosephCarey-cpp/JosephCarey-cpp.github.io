@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Internship</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets.css">
+</head>
+
+<body class="w3-theme-d1 w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:300px;" id="navSidebar"><br>
+    <div class="w3-container">
+      <button onclick="w3_close()" class="w3-buttonCustom w3-padding w3-hide-large w3-right" title="close menu">
+        <i class="fa fa-remove"></i>
+      </button>
+      <h4 class="w3-animate-left"><b>INTERNSHIP</b></h4>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left "><i
+          class="fa fa-solid fa-arrow-left"></i> MAIN PAGE</a>
+      <a href="#description" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">DESCRIPTION</a>
+      <a href="#video" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">VIDEO PRESENTAION</a>
+      <a href="#images" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">IMAGE GALLERY</a>
+
+      <a href="#resources" onclick="w3_close()"
+        class="w3-bar-item w3-buttonCustom w3-padding w3-text-theme w3-animate-left ">RESOURCES</a>
+    </div>
+    <div class="w3-panel w3-large">
+      <a href="https://www.linkedin.com/in/joseph-carey-612357172/" target="_blank" title="LinkedIn Profile"
+        class="removeTextDecor">
+        <i class="fa fa-2x fa-fw fa-brands fa-linkedin w3-animate-left w3-customButton"></i>
+      </a>
+      <a href="https://github.com/JosephCarey-cpp/" target="_blank" title="GitHub Profile" class="removeTextDecor">
+        <i class="fa fa-2x fa-fw fa-brands fa-github w3-animate-left w3-customButton"></i>
+      </a>
+
+      <a href="https://tryhackme.com/p/JoeCodes21" target="_blank" title="TryHackMe Profile" class="removeTextDecor">
+        <i class="fa fa-fw fa-2x">
+          <img src="assets/tryhackme_logo_custom.svg" alt="Norway" style="width:90%"
+            class=" w3-animate-left w3-customButton">
+        </i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="projects">
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-theme" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-diagram-project w3-customColor2"
+            style="padding-right: 10px;"></i><b>Gavilan College & San Jose State University (SJSU) Summer Internship</b>
+        </h2>
+        <img src="assets/Internship_JosephCarey.png" alt="Internship Banner" class="headerImg">
+      </div>
+    </header>
+
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="description">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-solid fa-bars w3-customColor2"
+          style="padding-right: 10px;"></i><b>Description:</b></h2>
+      <p><b>DURATION: JULY 2021 - AUG 2021; aprox. 6 - 8 weeks</b></p>
+      <p><b> This project was the first internship I participated in my career. The project's goal was to find a
+          solution to breaks in 3D-printed parts using a continuous stream of filament with an algorithm. The project
+          called for using the research of existing algorithms and creating a new one that fits the solution to the
+          project.</b></p>
+      <p><b>To see a presenation about the project, check out the <a href="#video">Video Tab</a></b></p>
+      <p><b>During this time, the project has helped in gaining the following skills:</b></p>
+      <ul>
+        <li>Algorithm creation using research and problem solving skills</li>
+        <li>Knowledge of graphs; specifically Eulerian and Planar graphs</li>
+        <li>Project Cycle</li>
+      </ul>
+      <p><b>To learn more about my experience, check out my resume below.</b></p>
+      <p>
+        <button class=" w3-buttonCustom w3-margin-top w3-margin-bottom">
+          <a href="assets/resume.pdf" target="_blank">
+            <i class="fa fa-2x fa-file-pdf w3-margin-right"></i>View Resume
+          </a>
+        </button>
+      </p>
+    </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="video">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class="fa fa-brands fa-youtube w3-customColor2"
+          style="padding-right: 10px;"></i><b>Video Presenation</b>
+      </h2>
+      <iframe width="680" height="435" src="https://www.youtube.com/embed/cL5RZ_pwxdc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="images">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class=" fa fa-solid fa-images w3-customColor2"
+          style="padding-right: 10px;"></i><b>Image Gallery</b></h2>
+
+      <div class="w3-row-padding">
+        <div class="w3-half w3-container w3-margin-bottom">
+          <img src="assets/Example1_FinalProject.png" alt="Sustainable Garden App" style="width:100%;">
+          <img src="assets/Example2_FinalProject.png" alt="Docker Containers And Django"
+            style="width:100%;  padding-top: 25px;">
+          <img src="assets/ExampleBreaks.png" alt="Docker Containers And Django"
+            style="width:100%;  padding-top: 25px;">
+        </div>
+        <div class="w3-half w3-container w3-margin-bottom">
+          <img src="assets/Algorithm.png" alt="Docker Containers And Django" style="width:75%;">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="resources">
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      <h2 class="w3-customColor1 w3-padding-16"><i class=" fa fa-solid fa-folder-open w3-customColor2"
+          style="padding-right: 10px;"></i><b>Resources</b></h2>
+      <p>Project Research Reports:</p>
+      <ul>
+        <li><a href="/assets/PlanarGraphsAddendumNotes_JosephCarey.pdf" target="_blank">Project Addendum Notes</a></li>
+        <li><a href="/assets/Report1_JosephCarey.pdf" target="_blank">Report 1</a></li>
+        <li><a href="/assets/Report2_JosephCarey.pdf" target="_blank">Report 2</a></li>
+        <li><a href="/assets/FinalReport3_JosephCarey.pdf" target="_blank">Report 3</a></li>
+      </ul>
+      <p>Project Research Highlights:</p>
+      <ul>
+        <li><a href="/assets/CREATING TOOLPATHS WITHOUT STARTS AND STOPS FOR EXTRUSION-BASED SYSTEMS.pdf"
+            target="_blank">Creating Toolpaths Without Starts And Stops For Extrusion-based Systems</a></li>
+        <li><a href="/assets/SPM_ContinuousToolPathPlanning.pdf" target="_blank">SPM Continuous Tool Path Planning</a>
+        </li>
+
+      </ul>
+      </ul>
+    </div>
+
+    <footer class="w3-container w3-padding-32 w3-black" id="about">
+      <p class="w3-black w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+          target="_blank" class="w3-hover-opacity">w3.css</a> and GitHub Pages</p>
+    </footer>
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("navSidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close(idOfDiv) {
+      document.getElementById("navSidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+      document.getElementById(idOfDiv).scrollIntoView();
+    }
+  </script>
+
+</body>
+
+</html>
